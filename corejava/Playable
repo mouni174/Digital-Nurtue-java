@@ -1,0 +1,19 @@
+interface Playable {
+    void play();
+}
+
+class Guitar implements Playable {
+
+    @Override
+    public void play() {
+        System.out.println("Playing Guitar");
+    }
+}
+
+public class InterfaceDemo {
+    public static void main(String[] args) {
+
+        Guitar guitar = new Guitar();
+        guitar.play();
+    }
+}
