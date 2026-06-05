@@ -1,0 +1,6 @@
+[
+  {"id": 1, "name": "Summer Street Concert", "date": "2026-07-15", "location": "Town Square", "category": "Music", "seats": 34, "description": "Live music from local bands."},
+  {"id": 2, "name": "Baking Basics Workshop", "date": "2026-06-20", "location": "Community Center", "category": "Workshop", "seats": 12, "description": "Learn baking skills with a local chef."},
+  {"id": 3, "name": "Charity Fun Run", "date": "2026-06-10", "location": "River Park", "category": "Sports", "seats": 0, "description": "5K run with proceeds to the shelter."},
+  {"id": 4, "name": "Garden Volunteer Day", "date": "2026-07-01", "location": "Greenway Gardens", "category": "Community", "seats": 18, "description": "Help build flower beds and meet neighbors."}
+]
