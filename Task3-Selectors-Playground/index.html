@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3: Selectors Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- UNIVERSAL SELECTOR will reset margins/padding -->
+    
+    <header id="mainHeader">
+        <h1>Selectors Playground - Community Event Portal</h1>
+        <p>Master CSS selectors: Universal, Element, ID, Class, and Grouping</p>
+    </header>
+    
+    <div class="container">
+        <!-- ELEMENT SELECTORS - all paragraphs and headings -->
+        <section>
+            <h2>Understanding CSS Selectors</h2>
+            <p>This page demonstrates different CSS selector types and their applications.</p>
+            
+            <!-- UNIVERSAL SELECTOR -->
+            <div class="section">
+                <h3>Universal Selector (*)</h3>
+                <p>The universal selector applies to ALL elements on the page.</p>
+                <p>We use it to reset default browser margins and padding.</p>
+            </div>
+            
+            <!-- ELEMENT SELECTORS -->
+            <div class="section">
+                <h3>Element Selectors</h3>
+                <p>Target HTML elements directly by their tag name.</p>
+                <p>Example: <code>p {}</code>, <code>h2 {}</code>, <code>div {}</code></p>
+            </div>
+            
+            <!-- ID SELECTOR -->
+            <div class="section">
+                <h3>ID Selector (#)</h3>
+                <p>The mainHeader uses the ID selector. IDs are unique and have high specificity.</p>
+                <p>Example: <code>#mainHeader {}</code> targets only one element.</p>
+            </div>
+            
+            <!-- CLASS SELECTORS -->
+            <div class="section">
+                <h3>Class Selectors (.)</h3>
+                <p>Classes are reusable and perfect for styling groups of elements.</p>
+            </div>
+            
+            <!-- GROUPING SELECTORS -->
+            <div class="section">
+                <h3>Grouping Selectors</h3>
+                <h2>This heading and the following paragraphs are styled together</h2>
+                <p>Grouping selectors with commas allows you to apply the same styles to multiple selectors.</p>
+                <p>Example: <code>h2, p { color: #333; }</code></p>
+            </div>
+        </section>
+        
+        <!-- EVENT CARDS - demonstrating CLASS selectors -->
+        <section>
+            <h2>Featured Events</h2>
+            
+            <article class="eventCard">
+                <h3>Community Cleanup</h3>
+                <p>Join us for a day of community service in the local park.</p>
+            </article>
+            
+            <article class="eventCard">
+                <h3>Tech Workshop</h3>
+                <p>Learn web development from industry experts.</p>
+            </article>
+            
+            <article class="eventCard">
+                <h3>Networking Lunch</h3>
+                <p>Connect with local business professionals and community leaders.</p>
+            </article>
+        </section>
+        
+        <!-- SELECTOR SPECIFICITY DEMONSTRATION -->
+        <section class="section">
+            <h2>Selector Specificity Demo</h2>
+            <p id="specific-demo">This element has an ID and demonstrates high specificity.</p>
+            <p class="medium-spec">This element uses a class selector with medium specificity.</p>
+            <p>This element uses element selector with low specificity.</p>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6: Link and List Styling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Link & List Styling</h1>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <!-- PSEUDO-CLASS LINKS -->
+        <section class="section">
+            <h2>Link Pseudo-Classes</h2>
+            <p>Links have different states that can be styled using pseudo-classes:</p>
+            
+            <div class="link-demo">
+                <p><a href="https://example.com" target="_blank">Normal Link</a> - :link state</p>
+                <p><a href="#visited" class="visited-example">Visited Link</a> - :visited state</p>
+                <p><a href="#hover" class="hover-example">Hover over this link</a> - :hover state</p>
+                <p><a href="#focus" class="focus-example">Tab to this link</a> - :focus state</p>
+                <p><a href="#active" class="active-example">Click and hold this link</a> - :active state</p>
+            </div>
+        </section>
+        
+        <!-- STYLED LINKS -->
+        <section class="section">
+            <h2>Styled Links Examples</h2>
+            
+            <p class="styled-link-1">
+                <a href="#example1">Button-style Link</a>
+            </p>
+            
+            <p class="styled-link-2">
+                <a href="#example2">Underline on Hover</a>
+            </p>
+            
+            <p class="styled-link-3">
+                <a href="#example3">Color Change Link</a>
+            </p>
+        </section>
+        
+        <!-- UNORDERED LISTS -->
+        <section class="section">
+            <h2>Unordered List Styles</h2>
+            
+            <h3>Default Bullet List</h3>
+            <ul class="bullet-list">
+                <li>Event planning and coordination</li>
+                <li>Community engagement</li>
+                <li>Volunteer opportunities</li>
+                <li>Resource management</li>
+            </ul>
+            
+            <h3>No Bullets (useful for navigation)</h3>
+            <ul class="no-bullets">
+                <li>Events</li>
+                <li>Community</li>
+                <li>Resources</li>
+                <li>Contact</li>
+            </ul>
+            
+            <h3>Custom Bullet Style</h3>
+            <ul class="custom-bullets">
+                <li>First item with custom bullet</li>
+                <li>Second item with custom bullet</li>
+                <li>Third item with custom bullet</li>
+            </ul>
+            
+            <h3>Inside Position (bullets inside content area)</h3>
+            <ul class="inside-bullets">
+                <li>This list has bullets positioned inside</li>
+                <li>Notice how the text wraps differently</li>
+                <li>Compared to the default outside position</li>
+            </ul>
+        </section>
+        
+        <!-- ORDERED LISTS -->
+        <section class="section">
+            <h2>Ordered List Styles</h2>
+            
+            <h3>Standard Numbered List</h3>
+            <ol class="numbered-list">
+                <li>Check event requirements</li>
+                <li>Gather volunteers</li>
+                <li>Set up venue</li>
+                <li>Conduct the event</li>
+                <li>Thank volunteers and collect feedback</li>
+            </ol>
+            
+            <h3>Roman Numerals</h3>
+            <ol class="roman-list">
+                <li>Introduction</li>
+                <li>Main Content</li>
+                <li>Conclusion</li>
+            </ol>
+            
+            <h3>Alphabetical List</h3>
+            <ol class="alpha-list">
+                <li>Arrange venue</li>
+                <li>Book speakers</li>
+                <li>Create promotional materials</li>
+                <li>Distribute invitations</li>
+            </ol>
+        </section>
+        
+        <!-- NESTED LISTS -->
+        <section class="section">
+            <h2>Nested Lists</h2>
+            
+            <ul class="nested-list">
+                <li>Community Events
+                    <ul>
+                        <li>Seasonal Events
+                            <ul>
+                                <li>Spring Festival</li>
+                                <li>Summer Concerts</li>
+                            </ul>
+                        </li>
+                        <li>Regular Programs
+                            <ul>
+                                <li>Weekly Cleanup</li>
+                                <li>Monthly Meetings</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Educational Events
+                    <ul>
+                        <li>Workshops</li>
+                        <li>Seminars</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- LIST WITH PADDING AND MARGIN -->
+        <section class="section">
+            <h2>List Spacing & Styling</h2>
+            
+            <h3>Spaced List Items</h3>
+            <ul class="spaced-list">
+                <li>Event with good spacing for readability</li>
+                <li>Items have padding and margin applied</li>
+                <li>Background colors highlight each item</li>
+                <li>Better visual separation improves UX</li>
+            </ul>
+        </section>
+        
+        <!-- DEFINITION LIST -->
+        <section class="section">
+            <h2>Definition Lists</h2>
+            
+            <dl class="definition-list">
+                <dt>Community</dt>
+                <dd>A group of people living in or associated with the same place, or having particular characteristics in common.</dd>
+                
+                <dt>Event</dt>
+                <dd>A thing that happens or takes place, especially one of importance.</dd>
+                
+                <dt>Volunteer</dt>
+                <dd>A person who freely offers to take part in an enterprise or undertake a task.</dd>
+            </dl>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Community Event Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

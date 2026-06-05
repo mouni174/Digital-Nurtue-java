@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11: Debug & Test with DevTools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>CSS Debugging with DevTools</h1>
+        <p>Community Event Portal - Testing & Troubleshooting Guide</p>
+    </header>
+    
+    <div class="container">
+        <!-- INTRODUCTION -->
+        <section class="section">
+            <h2>Chrome DevTools for CSS Debugging</h2>
+            <p><strong>DevTools Shortcut:</strong> Press F12 (Windows/Linux) or Cmd+Option+I (Mac)</p>
+            <p>Chrome DevTools provides powerful features for debugging CSS and inspecting your website in real-time.</p>
+        </section>
+        
+        <!-- INSPECTOR TOOL -->
+        <section class="section">
+            <h2>1. The Inspector Tool</h2>
+            <p><strong>Shortcut:</strong> Ctrl+Shift+C (or Cmd+Shift+C on Mac)</p>
+            
+            <div class="demo-box inspect-demo">
+                <h3>Click on me to inspect!</h3>
+                <p>Right-click on any element and select "Inspect" or use the Inspector tool to examine elements and their CSS.</p>
+            </div>
+            
+            <h3>What You Can Do:</h3>
+            <ul class="feature-list">
+                <li>Select elements on the page and see their HTML structure</li>
+                <li>View all CSS rules applied to an element</li>
+                <li>See the Box Model visualization</li>
+                <li>Identify which CSS file and line number each rule comes from</li>
+                <li>Toggle CSS rules on/off to see their effect</li>
+                <li>Edit CSS values in real-time to test changes</li>
+                <li>Hover over styles to see where they're defined</li>
+            </ul>
+        </section>
+        
+        <!-- BOX MODEL INSPECTION -->
+        <section class="section">
+            <h2>2. Box Model Inspector</h2>
+            <p>In the Inspector, scroll down to see the Box Model diagram showing margin, border, padding, and content.</p>
+            
+            <div class="box-model-demo">
+                <div class="inner-content">
+                    Content area (320x150px)
+                </div>
+            </div>
+            
+            <p><strong>Try this:</strong> Inspect this box and look at the box model. The colors show:</p>
+            <ul class="feature-list">
+                <li><span class="color-content">Orange</span> = Content</li>
+                <li><span class="color-padding">Green</span> = Padding</li>
+                <li><span class="color-border">Yellow</span> = Border</li>
+                <li><span class="color-margin">Red/Pink</span> = Margin</li>
+            </ul>
+        </section>
+        
+        <!-- ELEMENT MODIFICATION -->
+        <section class="section">
+            <h2>3. Live CSS Editing</h2>
+            <p>In DevTools, you can edit CSS values live without modifying your source files.</p>
+            
+            <div class="editable-demo">
+                <h3>Try Editing This!</h3>
+                <p>Right-click → Inspect. In the Styles panel, modify the background-color, font-size, or padding values. Changes appear instantly!</p>
+            </div>
+            
+            <h3>Steps to Edit CSS Live:</h3>
+            <ol class="feature-list">
+                <li>Inspect the element</li>
+                <li>Find the CSS rule in the Styles panel</li>
+                <li>Click on any CSS property value</li>
+                <li>Type your new value</li>
+                <li>Press Enter to apply</li>
+                <li>Use arrow keys to increment/decrement numeric values</li>
+            </ol>
+        </section>
+        
+        <!-- DEVICE TOOLBAR -->
+        <section class="section">
+            <h2>4. Device Toolbar (Responsive Testing)</h2>
+            <p><strong>Shortcut:</strong> Ctrl+Shift+M (or Cmd+Shift+M on Mac)</p>
+            
+            <p>The Device Toolbar lets you simulate different devices and screen sizes:</p>
+            
+            <div class="device-testing">
+                <h3>Test These Breakpoints:</h3>
+                <ul class="breakpoint-list">
+                    <li>
+                        <strong>iPhone SE (375px)</strong>
+                        <span>Popular mobile device</span>
+                    </li>
+                    <li>
+                        <strong>iPad (768px)</strong>
+                        <span>Tablet size</span>
+                    </li>
+                    <li>
+                        <strong>Desktop (1920px)</strong>
+                        <span>Large screen</span>
+                    </li>
+                    <li>
+                        <strong>Custom Size</strong>
+                        <span>Enter any dimensions</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <h3>What to Check:</h3>
+            <ul class="feature-list">
+                <li>Navigation menus stack properly on mobile</li>
+                <li>Images scale and remain visible</li>
+                <li>Text is readable at all sizes</li>
+                <li>Buttons and forms are touch-friendly (min 44px)</li>
+                <li>No horizontal scrolling on mobile</li>
+                <li>Media queries activate at correct breakpoints</li>
+            </ul>
+        </section>
+        
+        <!-- NETWORK TAB -->
+        <section class="section">
+            <h2>5. Network Tab (Check CSS Loading)</h2>
+            <p>The Network tab shows all resources loaded by your page, including CSS files.</p>
+            
+            <h3>Steps to Verify CSS is Loading:</h3>
+            <ol class="feature-list">
+                <li>Open DevTools (F12)</li>
+                <li>Click the "Network" tab</li>
+                <li>Refresh the page (Ctrl+R or Cmd+R)</li>
+                <li>Look for your CSS file (e.g., styles.css)</li>
+                <li>Check the Status column (should be 200 or 304)</li>
+                <li>Status 404 means the file wasn't found</li>
+                <li>Check the Size column to see the file size</li>
+            </ol>
+            
+            <h3>Understanding Status Codes:</h3>
+            <ul class="feature-list">
+                <li><strong>200:</strong> File loaded successfully</li>
+                <li><strong>304:</strong> Cached file (not modified)</li>
+                <li><strong>404:</strong> File not found (check the path)</li>
+                <li><strong>500:</strong> Server error</li>
+            </ul>
+        </section>
+        
+        <!-- COMMON CSS ISSUES -->
+        <section class="section">
+            <h2>6. Common CSS Issues & How to Debug</h2>
+            
+            <div class="issue-card">
+                <h3>❌ Styles Not Applied</h3>
+                <p><strong>Cause:</strong> CSS file not linked, wrong selector, or typo</p>
+                <p><strong>Debug:</strong></p>
+                <ul>
+                    <li>Check Network tab - is CSS file loading?</li>
+                    <li>Inspect element - do you see the CSS rule?</li>
+                    <li>Check selector specificity - higher specificity wins</li>
+                    <li>Look for !important rules that might override</li>
+                </ul>
+            </div>
+            
+            <div class="issue-card\">\n                <h3>❌ Layout Breaking on Mobile</h3>\n                <p><strong>Cause:</strong> Missing media queries, fixed widths, or no viewport meta tag</p>\n                <p><strong>Debug:</strong></p>\n                <ul>\n                    <li>Use Device Toolbar to test different sizes</li>\n                    <li>Check for min-width/max-width media queries</li>\n                    <li>Verify viewport meta tag in &lt;head&gt;</li>\n                    <li>Test font sizes scale appropriately</li>\n                </ul>\n            </div>\n            \n            <div class=\"issue-card\">\n                <h3>❌ Colors Not Showing</h3>\n                <p><strong>Cause:</strong> Wrong color format, transparency, or text color same as background</p>\n                <p><strong>Debug:</strong></p>\n                <ul>\n                    <li>Inspect element to see actual color value</li>\n                    <li>Check for rgba/hsla with 0 opacity</li>\n                    <li>Verify color contrast for accessibility</li>\n                    <li>Look for color: white on light background</li>\n                </ul>\n            </div>\n            \n            <div class=\"issue-card\">\n                <h3>❌ Spacing Issues</h3>\n                <p><strong>Cause:</strong> Margin/padding collapse, box-sizing, or inheritance</p>\n                <p><strong>Debug:</strong></p>\n                <ul>\n                    <li>Inspect and check Box Model diagram</li>\n                    <li>Toggle margin and padding values</li>\n                    <li>Verify box-sizing: border-box is set</li>\n                    <li>Check parent-child margin collapse</li>\n                </ul>\n            </div>\n        </section>\n        \n        <!-- INSPECTOR SHORTCUTS -->\n        <section class=\"section\">\n            <h2>7. Useful DevTools Shortcuts</h2>\n            \n            <table class=\"shortcuts-table\">\n                <thead>\n                    <tr>\n                        <th>Action</th>\n                        <th>Windows/Linux</th>\n                        <th>Mac</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <td>Open DevTools</td>\n                        <td>F12</td>\n                        <td>Cmd + Option + I</td>\n                    </tr>\n                    <tr>\n                        <td>Inspect Element</td>\n                        <td>Ctrl + Shift + C</td>\n                        <td>Cmd + Shift + C</td>\n                    </tr>\n                    <tr>\n                        <td>Device Toolbar</td>\n                        <td>Ctrl + Shift + M</td>\n                        <td>Cmd + Shift + M</td>\n                    </tr>\n                    <tr>\n                        <td>Console Tab</td>\n                        <td>Ctrl + Shift + J</td>\n                        <td>Cmd + Option + J</td>\n                    </tr>\n                    <tr>\n                        <td>Network Tab</td>\n                        <td>Ctrl + Shift + E</td>\n                        <td>Cmd + Option + E</td>\n                    </tr>\n                    <tr>\n                        <td>Sources Tab</td>\n                        <td>Ctrl + Shift + P</td>\n                        <td>Cmd + Shift + P</td>\n                    </tr>\n                </tbody>\n            </table>\n        </section>\n        \n        <!-- PERFORMANCE -->\n        <section class=\"section\">\n            <h2>8. Performance Testing</h2>\n            \n            <h3>Lighthouse Audit</h3>\n            <ol class=\"feature-list\">\n                <li>Open DevTools (F12)</li>\n                <li>Click \"Lighthouse\" tab</li>\n                <li>Select \"Mobile\" or \"Desktop\"</li>\n                <li>Click \"Analyze page load\"</li>\n                <li>Review Performance, Accessibility, Best Practices, and SEO scores</li>\n            </ol>\n            \n            <h3>What to Look For:</h3>\n            <ul class=\"feature-list\">\n                <li>CSS file size - minimize unnecessary CSS</li>\n                <li>Unused CSS - remove styles not applied</li>\n                <li>Large images - optimize before using</li>\n                <li>Render-blocking resources - defer non-critical CSS</li>\n                <li>Cumulative Layout Shift - ensure layout stability</li>\n            </ul>\n        </section>\n        \n        <!-- BEST PRACTICES -->\n        <section class=\"section\">\n            <h2>9. CSS Debugging Best Practices</h2>\n            \n            <ul class=\"best-practices\">\n                <li>Use meaningful class names and IDs</li>\n                <li>Keep CSS organized with comments</li>\n                <li>Use browser prefixes for better compatibility</li>\n                <li>Test on multiple browsers (Chrome, Firefox, Safari, Edge)</li>\n                <li>Validate CSS using W3C Validator</li>\n                <li>Use external stylesheets for better caching</li>\n                <li>Minimize CSS file for production</li>\n                <li>Always test responsive design on real devices when possible</li>\n            </ul>\n        </section>\n    </div>\n    \n    <footer class=\"footer\">\n        <p>&copy; 2024 Community Event Portal. All rights reserved.</p>\n    </footer>\n</body>\n</html>\n

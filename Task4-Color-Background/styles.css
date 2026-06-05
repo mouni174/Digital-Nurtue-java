@@ -1,0 +1,233 @@
+/* ============================
+   TASK 4: COLOR & BACKGROUND STYLING
+   Community Event Portal Branding
+   ============================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* Fallback background color */
+    background-color: #f5f5f5;
+}
+
+/* HEADER WITH GRADIENT BACKGROUND */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* SECTION STYLING */
+.section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+/* ---- HEX COLOR BOXES ---- */
+.color-box {
+    padding: 40px;
+    margin: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.05);
+}
+
+/* HEX Colors */
+.hex-blue {
+    background-color: #007BFF;
+}
+
+.hex-green {
+    background-color: #28a745;
+}
+
+.hex-red {
+    background-color: #dc3545;
+}
+
+/* ---- RGB & RGBA COLOR BOXES ---- */
+.rgb-purple {
+    background-color: rgb(155, 89, 182);
+}
+
+.rgba-transparent {
+    background-color: rgba(52, 152, 219, 0.7);
+}
+
+.rgba-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ---- GRADIENT BACKGROUNDS ---- */
+.bg-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Fallback color */
+    background-color: #667eea;
+}
+
+/* Gradient header sections */
+.gradient-header-1 {
+    background: linear-gradient(90deg, #9b59b6 0%, #e91e63 100%);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.gradient-header-1 h3 {
+    color: white;
+    margin: 0;
+}
+
+.gradient-header-2 {
+    background: linear-gradient(90deg, #007BFF 0%, #00bcd4 100%);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.gradient-header-2 h3 {
+    color: white;
+    margin: 0;
+}
+
+.gradient-header-3 {
+    background: linear-gradient(90deg, #ff9800 0%, #f44336 100%);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.gradient-header-3 h3 {
+    color: white;
+    margin: 0;
+}
+
+/* ---- EVENT CARDS WITH COLOR THEMING ---- */
+.event {
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #007BFF;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Premium event with purple theme */
+.premium-event {
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.1) 0%, rgba(155, 89, 182, 0.05) 100%);
+    border-left-color: #9b59b6;
+}
+
+.premium-event h3 {
+    color: #9b59b6;
+}
+
+/* Standard event with blue theme */
+.standard-event {
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 123, 255, 0.05) 100%);
+    border-left-color: #007BFF;
+}
+
+.standard-event h3 {
+    color: #007BFF;
+}
+
+/* Special event with gradient theme */
+.special-event {
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.1) 0%, rgba(244, 67, 54, 0.1) 100%);
+    border-left-color: #ff9800;
+}
+
+.special-event h3 {
+    color: #ff9800;
+}
+
+/* ---- COLOR OVERLAY DEMO ---- */
+.color-overlay-demo {
+    background-image: 
+        linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect fill="%23f0f0f0" width="100" height="100"/><circle cx="50" cy="50" r="30" fill="%23e0e0e0"/></svg>');
+    background-color: #007BFF;
+    /* Fallback solid color */
+    color: white;
+}
+
+.color-overlay-demo h2 {
+    color: white;
+    border-bottom-color: white;
+}
+
+.color-overlay-demo p {
+    color: white;
+}
+
+/* ---- CONTRAST EXAMPLES ---- */
+.contrast-good {
+    background-color: #f0f0f0;
+    color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.contrast-excellent {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* ---- FOOTER ---- */
+.footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+}

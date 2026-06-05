@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8: Box Model & Layout Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Box Model & Layout Control</h1>
+        <p>Understanding Margin, Padding, Border, and Box Sizing</p>
+    </header>
+    
+    <div class="container">
+        <!-- BOX MODEL EXPLANATION -->
+        <section class="section">
+            <h2>Box Model Components</h2>
+            <p>The CSS Box Model consists of four layers:</p>
+            <ul>
+                <li><strong>Content:</strong> The actual content inside the box</li>
+                <li><strong>Padding:</strong> Space inside the box, between content and border</li>
+                <li><strong>Border:</strong> The boundary around the padding</li>
+                <li><strong>Margin:</strong> Space outside the box, between border and adjacent elements</li>
+            </ul>
+        </section>
+        
+        <!-- MARGIN EXAMPLES -->
+        <section class="section">
+            <h2>Margin Examples</h2>
+            <p>Margin creates space OUTSIDE an element</p>
+            
+            <div class="margin-example-1">
+                <p>Margin: 20px (all sides equal)</p>
+            </div>
+            
+            <div class="margin-example-2">
+                <p>Margin: 10px top/bottom, 30px left/right</p>
+            </div>
+            
+            <div class="margin-example-3">
+                <p>Margin: 5px top, 15px right, 25px bottom, 35px left</p>
+            </div>
+            
+            <div class="margin-example-auto">
+                <p>Margin: auto (centers the element)</p>
+            </div>
+        </section>
+        
+        <!-- PADDING EXAMPLES -->
+        <section class="section">
+            <h2>Padding Examples</h2>
+            <p>Padding creates space INSIDE an element, around the content</p>
+            
+            <div class="padding-example-1">
+                <p>Small padding: 10px</p>
+            </div>
+            
+            <div class="padding-example-2">
+                <p>Medium padding: 20px</p>
+            </div>
+            
+            <div class="padding-example-3">
+                <p>Large padding: 30px</p>
+            </div>
+        </section>
+        
+        <!-- BORDER EXAMPLES -->
+        <section class="section">
+            <h2>Border Styles & Properties</h2>
+            <p>Borders define the edge of an element</p>
+            
+            <div class="border-example-1">
+                <p>Solid border: 2px solid #007BFF</p>
+            </div>
+            
+            <div class="border-example-2">
+                <p>Dashed border: 2px dashed #28a745</p>
+            </div>
+            
+            <div class="border-example-3">
+                <p>Double border: 3px double #f44336</p>
+            </div>
+            
+            <div class="border-example-4">
+                <p>Dotted border with rounded corners</p>
+            </div>
+            
+            <div class="border-example-5">
+                <p>Individual side borders (left side only)</p>
+            </div>
+            
+            <div class="border-example-6">
+                <p>Colored borders on different sides</p>
+            </div>
+        </section>
+        
+        <!-- OUTLINE EXAMPLES -->
+        <section class="section">
+            <h2>Outline vs Border</h2>
+            <p>Outlines don't affect the box model, useful for focus states</p>
+            
+            <input type="text" class="input-outline" placeholder="Click to see outline">
+            
+            <div class="outline-example">
+                <p>Element with outline - doesn't affect layout</p>
+            </div>
+        </section>
+        
+        <!-- EVENT CARDS WITH BOX MODEL -->
+        <section class="section">
+            <h2>Event Cards - Box Model in Practice</h2>
+            
+            <div class="event-card-large">
+                <h3>Community Cleanup Day</h3>
+                <p class="event-date">Saturday, June 15, 2024</p>
+                <p class="event-description">Join us for a meaningful community service experience.</p>
+                <button class="event-button">Learn More</button>
+            </div>
+            
+            <div class="event-card-compact">
+                <h3>Tech Workshop</h3>
+                <p>Learn web development fundamentals</p>
+            </div>
+        </section>
+        
+        <!-- VISIBILITY & DISPLAY -->
+        <section class="section">
+            <h2>Display vs Visibility</h2>
+            
+            <p>The element below uses <code>display: none</code> (removed from layout):</p>
+            <div class="display-none">
+                <p>This element is completely removed from the layout</p>
+            </div>
+            <p>The element below uses <code>visibility: hidden</code> (space preserved):</p>
+            <div class="visibility-hidden">
+                <p>This element is hidden but still takes up space</p>
+            </div>
+            <p>The element below uses <code>opacity: 0</code> (transparent, takes space):</p>
+            <div class="opacity-zero">
+                <p>This element is transparent but still takes up space</p>
+            </div>
+        </section>
+        
+        <!-- BOX-SIZING -->
+        <section class="section">
+            <h2>Box-Sizing Property</h2>
+            
+            <div class="box-sizing-content">
+                <p><code>box-sizing: content-box</code> - Default, width/height apply to content only</p>
+            </div>
+            
+            <div class="box-sizing-border">
+                <p><code>box-sizing: border-box</code> - Width/height include padding and border</p>
+            </div>
+        </section>
+        
+        <!-- FORM WITH BOX MODEL -->
+        <section class="section">
+            <h2>Form with Box Model Styling</h2>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Event Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter event name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Describe the event"></textarea>
+                </div>
+                
+                <button class="submit-button">Submit Event</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Community Event Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

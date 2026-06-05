@@ -1,0 +1,349 @@
+/* ============================
+   TASK 6: LINK & LIST STYLING
+   Community Event Portal
+   ============================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header and navigation */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px 20px;
+    color: white;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Main navigation styling */
+.main-nav {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0;
+    border-radius: 5px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-list li a:active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section styling */
+.section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+.section h3 {
+    color: #0056b3;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* ---- LINK STYLING ---- */
+/* Link pseudo-classes */
+a {
+    color: #007BFF;
+}
+
+a:link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9b59b6;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid #007BFF;
+    outline-offset: 2px;
+}
+
+a:active {
+    color: #003a82;
+    text-decoration: underline;
+}
+
+/* Link demo section */
+.link-demo {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.link-demo p {
+    margin: 12px 0;
+}
+
+/* Styled link examples */
+.styled-link-1 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.styled-link-1 a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.styled-link-2 a {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.styled-link-2 a:hover {
+    border-bottom-color: #007BFF;
+    text-decoration: none;
+}
+
+.styled-link-3 a {
+    color: #28a745;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.styled-link-3 a:hover {
+    color: #f44336;
+    text-decoration: none;
+}
+
+/* ---- LIST STYLING ---- */
+
+/* Default bullet list */
+.bullet-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.bullet-list li {
+    margin-bottom: 8px;
+}
+
+/* No bullets (for navigation) */
+.no-bullets {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.no-bullets li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.no-bullets li:last-child {
+    border-bottom: none;
+}
+
+/* Custom bullet style */
+.custom-bullets {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.custom-bullets li {
+    color: #007BFF;
+    margin-bottom: 8px;
+}
+
+/* Inside position */
+.inside-bullets {
+    list-style-position: inside;
+    margin-bottom: 15px;
+}
+
+.inside-bullets li {
+    margin-bottom: 8px;
+    line-height: 1.8;
+}
+
+/* ---- ORDERED LISTS ---- */
+
+/* Numbered list */
+.numbered-list {
+    list-style-type: decimal;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.numbered-list li {
+    margin-bottom: 8px;
+}
+
+/* Roman numerals */
+.roman-list {
+    list-style-type: upper-roman;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.roman-list li {
+    margin-bottom: 8px;
+}
+
+/* Alphabetical */
+.alpha-list {
+    list-style-type: lower-alpha;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.alpha-list li {
+    margin-bottom: 8px;
+}
+
+/* ---- NESTED LISTS ---- */
+.nested-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.nested-list li {
+    margin-bottom: 10px;
+}
+
+.nested-list ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.nested-list ul ul {
+    list-style-type: square;
+}
+
+.nested-list li ul li {
+    margin-bottom: 5px;
+}
+
+/* ---- SPACED LIST ---- */
+.spaced-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.spaced-list li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border-left: 4px solid #007BFF;
+    transition: background-color 0.3s ease;
+}
+
+.spaced-list li:hover {
+    background-color: #f0f8ff;
+}
+
+/* ---- DEFINITION LIST ---- */
+.definition-list {
+    margin-bottom: 15px;
+}
+
+.definition-list dt {
+    font-weight: bold;
+    color: #007BFF;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.definition-list dt:first-child {
+    margin-top: 0;
+}
+
+.definition-list dd {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.8;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.definition-list dd:last-child {
+    border-bottom: none;
+}
+
+/* ---- FOOTER ---- */
+.footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+}

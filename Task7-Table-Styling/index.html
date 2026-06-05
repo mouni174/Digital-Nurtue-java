@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7: Table Styling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Table Styling</h1>
+        <p>Community Event Portal - Event Admin Dashboard</p>
+    </header>
+    
+    <div class="container">
+        <!-- BASIC TABLE -->
+        <section class="section">
+            <h2>Events Overview Table</h2>
+            
+            <table class="events-table">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Attendees</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Community Cleanup</td>
+                        <td>June 15, 2024</td>
+                        <td>9:00 AM</td>
+                        <td>Central Park</td>
+                        <td>45</td>
+                        <td><span class="status-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tech Workshop</td>
+                        <td>June 19, 2024</td>
+                        <td>6:00 PM</td>
+                        <td>Community Center</td>
+                        <td>32</td>
+                        <td><span class="status-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>Art Exhibition</td>
+                        <td>June 21-23, 2024</td>
+                        <td>10:00 AM</td>
+                        <td>Gallery Downtown</td>
+                        <td>128</td>
+                        <td><span class="status-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>Networking Lunch</td>
+                        <td>June 25, 2024</td>
+                        <td>12:00 PM</td>
+                        <td>Restaurant Quarter</td>
+                        <td>67</td>
+                        <td><span class="status-pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>Community Festival</td>
+                        <td>July 4, 2024</td>
+                        <td>2:00 PM</td>
+                        <td>Main Street</td>
+                        <td>500+</td>
+                        <td><span class="status-planning">Planning</span></td>
+                    </tr>
+                    <tr>
+                        <td>Book Club Meeting</td>
+                        <td>June 10, 2024</td>
+                        <td>7:00 PM</td>
+                        <td>Library</td>
+                        <td>18</td>
+                        <td><span class="status-completed">Completed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- ZEBRA STRIPED TABLE -->
+        <section class="section">
+            <h2>Volunteer Sign-Up Table (Zebra Striped)</h2>
+            
+            <table class="volunteer-table">
+                <thead>
+                    <tr>
+                        <th>Volunteer Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Event</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>john@example.com</td>
+                        <td>(555) 123-4567</td>
+                        <td>Community Cleanup</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td>sarah@example.com</td>
+                        <td>(555) 234-5678</td>
+                        <td>Tech Workshop</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Davis</td>
+                        <td>mike@example.com</td>
+                        <td>(555) 345-6789</td>
+                        <td>Community Cleanup</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Wilson</td>
+                        <td>emily@example.com</td>
+                        <td>(555) 456-7890</td>
+                        <td>Art Exhibition</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>David Brown</td>
+                        <td>david@example.com</td>
+                        <td>(555) 567-8901</td>
+                        <td>Tech Workshop</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Lisa Anderson</td>
+                        <td>lisa@example.com</td>
+                        <td>(555) 678-9012</td>
+                        <td>Community Festival</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- BUDGET TABLE -->
+        <section class="section">
+            <h2>Event Budget Table</h2>
+            
+            <table class="budget-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Venue</td>
+                        <td>Park rental fee</td>
+                        <td>1</td>
+                        <td>$500.00</td>
+                        <td>$500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Catering</td>
+                        <td>Lunch for volunteers</td>
+                        <td>50</td>
+                        <td>$12.00</td>
+                        <td>$600.00</td>
+                    </tr>
+                    <tr>
+                        <td>Supplies</td>
+                        <td>Trash bags, gloves, equipment</td>
+                        <td>1</td>
+                        <td>$150.00</td>
+                        <td>$150.00</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>Flyers and social media</td>
+                        <td>1</td>
+                        <td>$100.00</td>
+                        <td>$100.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong>Total Budget:</strong></td>
+                        <td><strong>$1,350.00</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        
+        <!-- COMPARISON TABLE -->
+        <section class="section">
+            <h2>Event Package Comparison</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Basic</th>
+                        <th>Standard</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Max Attendees</strong></td>
+                        <td>50</td>
+                        <td>150</td>
+                        <td>500+</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Duration</strong></td>
+                        <td>2 hours</td>
+                        <td>4 hours</td>
+                        <td>Full day</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Venue Support</strong></td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Catering</strong></td>
+                        <td>✗</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Volunteer Coordination</strong></td>
+                        <td>✗</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Marketing Support</strong></td>
+                        <td>✗</td>
+                        <td>✗</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr class="price-row">
+                        <td><strong>Price</strong></td>
+                        <td>$500</td>
+                        <td>$1,500</td>
+                        <td>$3,500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Community Event Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

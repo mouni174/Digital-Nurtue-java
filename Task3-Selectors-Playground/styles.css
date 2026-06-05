@@ -1,0 +1,137 @@
+/* ============================
+   TASK 3: SELECTORS PLAYGROUND
+   Master CSS Selectors
+   ============================ */
+
+/* UNIVERSAL SELECTOR - Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ELEMENT SELECTORS - Target HTML elements directly */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #0056b3;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Grouping selectors - style h3 and p together */
+h3,
+p {
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #007BFF;
+    font-size: 1.3em;
+}
+
+p {
+    line-height: 1.8;
+    color: #555;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #d63384;
+}
+
+/* ID SELECTOR - Unique styles for the main header */
+#mainHeader {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid #007BFF;
+}
+
+#mainHeader h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#mainHeader p {
+    color: #f0f0f0;
+    font-size: 1.1em;
+}
+
+/* ID Selector for specific demo */
+#specific-demo {
+    color: #d63384;
+    font-weight: bold;
+    background-color: #ffe0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* CLASS SELECTOR - Reusable styles for containers */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007BFF;
+}
+
+/* CLASS SELECTOR - Event cards */
+.eventCard {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-left: 5px solid #007BFF;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.eventCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.eventCard h3 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.eventCard p {
+    color: #444;
+}
+
+/* CLASS SELECTOR - Medium specificity demo */
+.medium-spec {
+    color: #007BFF;
+    background-color: #e7f3ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Descendant selector - sections within container */
+section {
+    margin-bottom: 30px;
+}

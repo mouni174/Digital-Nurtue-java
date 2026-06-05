@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9: Multiple Columns</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>CSS3 Multi-Column Layout</h1>
+        <p>Community News & Articles</p>
+    </header>
+    
+    <div class="container">
+        <!-- INTRODUCTION -->
+        <section class="section">
+            <h2>Multi-Column Text Layout</h2>
+            <p>The CSS3 multi-column layout feature allows you to display content in columns similar to a newspaper. This is useful for long-form text like articles, bulletins, and newsletters.</p>
+        </section>
+        
+        <!-- 2-COLUMN LAYOUT -->
+        <section class="section">
+            <h2>Two-Column Article</h2>
+            <article class="article-2col">
+                <h3>Community News Bulletin</h3>
+                <p>
+                    Welcome to our monthly community news bulletin! This month has been filled with exciting events and wonderful achievements from our local community members. Our volunteers have shown incredible dedication and passion in everything they do, from community cleanups to educational workshops.
+                </p>
+                <p>
+                    The recent community cleanup event was a huge success with over 50 volunteers participating. Together, we collected several tons of trash and transformed our local park into a beautiful gathering space. The positive feedback from residents has been overwhelming, and we're already planning the next cleanup event for next month.
+                </p>
+                <p>
+                    Our new tech workshop program has attracted a diverse group of learners ranging from teenagers to retirees. Instructors have been providing hands-on training in web development, digital literacy, and programming basics. Several participants have already expressed interest in more advanced courses.
+                </p>
+                <p>
+                    Looking ahead, we have several exciting initiatives in the pipeline. We're planning a community festival for the summer with live music, local food vendors, and interactive activities for families. We're also developing a mentorship program to connect experienced professionals with young aspiring career-changers.
+                </p>
+                <p>
+                    We encourage everyone to get involved and make a difference in our community. Whether you can volunteer your time, donate resources, or simply attend our events, your participation means the world to us. Together, we can build a stronger, more connected community!
+                </p>
+            </article>
+        </section>
+        
+        <!-- 3-COLUMN LAYOUT -->
+        <section class="section">
+            <h2>Three-Column Newsletter</h2>
+            <article class="article-3col">
+                <h3>Extended Community Newsletter</h3>
+                <p>
+                    Welcome to our comprehensive community update! This newsletter brings you the latest news, upcoming events, and success stories from our vibrant community. We're proud to showcase the incredible work being done by our volunteers and community organizations.
+                </p>
+                <p>
+                    The Community Cleanup Initiative continues to grow each month. From clearing parks to maintaining public spaces, our volunteers are making a tangible difference. If you're interested in joining our efforts, we meet every Saturday morning at Central Park. No experience necessary—just bring your enthusiasm!
+                </p>
+                <p>
+                    Education remains a cornerstone of our community development. Our Tech Workshops have expanded to include beginner, intermediate, and advanced courses. Topics include HTML & CSS, JavaScript, data analysis, digital marketing, and much more. Classes are offered both in-person and online to accommodate different schedules.
+                </p>
+                <p>
+                    The Youth Mentorship Program has been matching young professionals with experienced mentors from various industries. Participants report significant growth in their skills, confidence, and career prospects. We're now accepting applications for the next cohort and encourage qualified mentors to register.
+                </p>
+                <p>
+                    Our Community Art Initiative provides opportunities for local artists to showcase their work. The upcoming gallery exhibition will feature paintings, sculptures, photography, and digital art. Opening reception is planned for July, and we invite everyone to celebrate our local talent.
+                </p>
+                <p>
+                    Health and wellness programs have become increasingly popular. We offer yoga classes, meditation sessions, fitness workshops, and nutritional seminars. All programs are designed to be inclusive and accessible to community members of all ages and fitness levels.
+                </p>
+            </article>
+        </section>
+        
+        <!-- BALANCED VS UNBALANCED COLUMNS -->
+        <section class="section">
+            <h2>Column Balance Options</h2>
+            
+            <h3>Balanced Columns (column-fill: balance)</h3>
+            <article class="article-balanced">
+                <p>
+                    This article demonstrates balanced column layout. The content is distributed evenly across columns, with the height of each column being approximately equal. This is the default behavior and provides a visually balanced appearance. The browser automatically calculates how much content goes in each column to minimize the height difference.
+                </p>
+                <p>
+                    Balanced columns work well for editorial content where you want a polished, finished appearance. Long articles are distributed proportionally, preventing one column from being significantly taller than another.
+                </p>
+            </article>
+            
+            <h3>Unbalanced Columns (column-fill: auto)</h3>
+            <article class="article-unbalanced">
+                <p>
+                    This article uses unbalanced column layout. Content fills columns sequentially from top to bottom. The first column fills completely before content moves to the next column. This creates a more flowing, left-to-right reading experience similar to how we read books.
+                </p>
+                <p>
+                    Unbalanced columns are ideal for continuous reading experiences where you want to preserve the natural reading order and flow of content.
+                </p>
+            </article>
+        </section>
+        
+        <!-- COLUMN GAPS & RULES -->
+        <section class="section">
+            <h2>Column Gaps and Rules</h2>
+            
+            <article class="article-with-gap">
+                <h3>Columns with Gap</h3>
+                <p>
+                    This section demonstrates different column gap sizes. The column-gap property controls the space between columns. A larger gap improves readability by creating clear visual separation between columns. The default gap varies by browser but is typically around 1em.
+                </p>
+                <p>
+                    Column gaps are important for visual hierarchy and preventing text from appearing too close together. They help guide the reader's eye across columns and improve overall readability of multi-column layouts.
+                </p>
+            </article>
+            
+            <article class="article-with-rule">
+                <h3>Columns with Rules</h3>
+                <p>
+                    Column rules are dividing lines between columns, created with the column-rule property. Rules can be customized with different styles (solid, dashed, dotted), widths, and colors. In this example, we're using a solid rule.
+                </p>
+                <p>
+                    Rules provide visual separation between columns and can enhance the newspaper-like appearance of multi-column layouts. However, they should be used judiciously to avoid creating a cluttered appearance.
+                </p>
+            </article>
+        </section>
+        
+        <!-- SPAN ACROSS COLUMNS -->
+        <section class="section">
+            <h2>Spanning Elements Across Columns</h2>
+            
+            <article class="article-span">
+                <h3 class="span-all">This Heading Spans All Columns</h3>
+                <p>
+                    Elements can span across multiple columns using the column-span property. Set column-span: all on an element to make it span across all columns. This is useful for headings, separators, and emphasis sections that should break out of the column layout.
+                </p>
+                <p>
+                    When you use column-span: all, the element creates a break in the column flow. Content before the spanning element fills the columns normally, then the spanning element appears at full width, and content after it resumes the column layout.
+                </p>
+                <p>
+                    This technique is particularly useful for article headlines, section breaks, and highlighted content that deserves to command the reader's full attention.
+                </p>
+            </article>
+        </section>
+        
+        <!-- RESPONSIVE COLUMNS -->
+        <section class="section">
+            <h2>Responsive Multi-Column Design</h2>
+            
+            <article class="article-responsive">
+                <h3>Responsive Columns</h3>
+                <p>
+                    Multi-column layout responds beautifully to different screen sizes. On desktop, this content might display in 3 columns. On tablets, it might display in 2 columns. On mobile devices, it naturally falls back to a single column for optimal readability.
+                </p>
+                <p>
+                    Instead of specifying a fixed number of columns, you can use column-count: auto combined with column-width to let the browser determine the optimal number of columns based on available space. This provides a more flexible, responsive layout.
+                </p>
+                <p>
+                    Resize your browser or use the device toolbar to see how this layout adapts to different screen sizes. The columns gracefully adjust to maintain readability across all devices.
+                </p>
+            </article>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Community Event Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

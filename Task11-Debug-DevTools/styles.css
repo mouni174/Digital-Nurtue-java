@@ -1,0 +1,346 @@
+/* ============================
+   TASK 11: DEBUG & TEST WITH DEVTOOLS
+   Community Event Portal
+   ============================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section */
+.section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+.section h3 {
+    color: #0056b3;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.section ul,
+.section ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+/* ---- DEMO BOXES ---- */
+.demo-box {
+    background-color: #f0f8ff;
+    border: 2px dashed #007BFF;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.inspect-demo {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.inspect-demo:hover {
+    background-color: #e3f2fd;
+    border-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.inspect-demo h3 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.inspect-demo p {
+    margin-bottom: 0;
+}
+
+/* ---- BOX MODEL DEMO ---- */
+.box-model-demo {
+    background-color: #ffcdd2;
+    margin: 20px 0;
+    padding: 40px;
+    border: 20px solid #ffb3ba;
+    outline: 2px dashed #f44336;
+    outline-offset: 5px;
+}
+
+.inner-content {
+    background-color: #fff9c4;
+    padding: 30px;
+    border: 10px solid #fff59d;
+    text-align: center;
+    font-weight: bold;
+    color: #f57f17;
+    width: 320px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-content {
+    background-color: #fff9c4;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.color-padding {
+    background-color: #c8e6c9;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.color-border {
+    background-color: #fff59d;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.color-margin {
+    background-color: #ffcdd2;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* ---- EDITABLE DEMO ---- */
+.editable-demo {
+    background-color: #e8f5e9;
+    border-left: 5px solid #4CAF50;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.editable-demo h3 {
+    color: #2e7d32;
+    margin-top: 0;
+}
+
+.editable-demo p {
+    color: #1b5e20;
+}
+
+/* ---- FEATURE LIST ---- */
+.feature-list {
+    background-color: #f9f9f9;
+    padding: 20px 25px;
+    border-radius: 5px;
+    margin: 15px 0 !important;
+}
+
+.feature-list li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+/* ---- DEVICE TESTING ---- */
+.device-testing {
+    background-color: #f3e5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+    border-left: 4px solid #9c27b0;
+}
+
+.breakpoint-list {
+    list-style: none;
+    margin: 15px 0 !important;
+    padding: 0 !important;
+}
+
+.breakpoint-list li {
+    background-color: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #9c27b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breakpoint-list strong {
+    color: #6a1b9a;
+}
+
+.breakpoint-list span {
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* ---- ISSUE CARDS ---- */
+.issue-card {
+    background-color: #fff3e0;
+    border: 2px solid #ff9800;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #ff9800;
+}
+
+.issue-card h3 {
+    color: #e65100;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.issue-card p {
+    margin-bottom: 10px;
+}
+
+.issue-card p strong {
+    color: #ff6f00;
+}
+
+.issue-card ul {
+    margin: 10px 0 10px 25px !important;
+}
+
+.issue-card li {
+    margin-bottom: 8px;
+}
+
+/* ---- SHORTCUTS TABLE ---- */
+.shortcuts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.shortcuts-table th {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #0056b3;
+}
+
+.shortcuts-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.shortcuts-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.shortcuts-table tbody tr:hover {
+    background-color: #e8f4f8;
+}
+
+/* ---- BEST PRACTICES ---- */
+.best-practices {
+    background-color: #e8f5e9;
+    padding: 20px 25px;
+    border-radius: 5px;
+    margin: 15px 0 !important;
+    border-left: 4px solid #4CAF50;
+}
+
+.best-practices li {
+    margin-bottom: 12px;
+    line-height: 1.8;
+    color: #1b5e20;
+}
+
+/* ---- FOOTER ---- */
+.footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+    
+    .header h1 {
+        font-size: 1.8em;
+    }
+    
+    .inner-content {
+        width: 100%;
+        height: auto;
+        min-height: 150px;
+    }
+    
+    .shortcuts-table {
+        font-size: 0.9em;
+    }
+    
+    .shortcuts-table th,
+    .shortcuts-table td {
+        padding: 10px;
+    }
+    
+    .breakpoint-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .breakpoint-list span {
+        margin-top: 8px;
+    }
+}

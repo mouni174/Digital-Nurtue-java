@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1: Why CSS? - Inline vs. Internal vs. External</title>
+    
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- INLINE STYLE -->
+        <h1 style="color: red;">Local Community Event Portal - CSS Methods Demo</h1>
+        
+        <h2>Understanding CSS: Three Different Approaches</h2>
+        
+        <!-- INTERNAL STYLE (defined in <style> tag above) -->
+        <section class="section">
+            <h3>Internal CSS (Embedded in HTML)</h3>
+            <p>This section demonstrates internal CSS styling using the &lt;style&gt; tag in the &lt;head&gt; section.</p>
+            <p><strong>Pros:</strong> Easy to manage for small projects, all styles in one place</p>
+            <p><strong>Cons:</strong> Cannot be reused across multiple pages, increases HTML file size</p>
+        </section>
+        
+        <!-- EXTERNAL STYLESHEET -->
+        <section class="section">
+            <h3>External CSS (Linked Stylesheet)</h3>
+            <p>This section uses external CSS from the styles.css file linked at the top of the HTML.</p>
+            <p><strong>Pros:</strong> Reusable across multiple pages, better caching, cleaner HTML, easier maintenance</p>
+            <p><strong>Cons:</strong> Requires additional HTTP request</p>
+        </section>
+        
+        <!-- INLINE STYLE (again) -->
+        <section style="background-color: #e8f4f8; padding: 15px; margin-top: 20px; border-left: 4px solid #007BFF;">
+            <h3>Inline CSS</h3>
+            <p>This section is styled directly with inline style attributes on the HTML element.</p>
+            <p><strong>Pros:</strong> Applies directly to an element, highest specificity</p>
+            <p><strong>Cons:</strong> Difficult to maintain, poor code organization, cannot be reused, bloats HTML</p>
+        </section>
+        
+        <hr>
+        
+        <!-- RECOMMENDATION -->
+        <div class="recommendation">
+            <h3>Best Practice Recommendation</h3>
+            <p>For production applications, use <strong>External CSS</strong> for the following reasons:</p>
+            <ul>
+                <li>Separation of concerns (HTML for content, CSS for styling)</li>
+                <li>Better maintainability across large projects</li>
+                <li>Code reusability</li>
+                <li>Browser caching improves performance</li>
+                <li>Easier for teams to collaborate</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
