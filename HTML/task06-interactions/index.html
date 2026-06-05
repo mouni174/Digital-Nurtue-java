@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Task 06 — Event Feedback & Interactions</title>
+  <style>.thumb{border:2px solid #444;max-width:180px;cursor:pointer}.enlarged{transform:scale(1.5)}</style>
+</head>
+<body>
+  <h1>Interactions</h1>
+  <form id="f">
+    <label>Phone<input id="phone" onblur="validatePhone(this)"></label>
+    <label>Type<select id="etype" onchange="showFee(this)"><option value="picnic">Picnic</option><option value="concert">Concert</option></select></label>
+    <div id="fee"></div>
+    <label>Feedback<textarea id="fb" onkeydown="count()" onkeyup="count()"></textarea></label>
+    <div id="chars">0</div>
+    <button id="btn" type="button" onclick="submitClick()">Submit</button>
+  </form>
+
+  <img src="https://via.placeholder.com/180" class="thumb" ondblclick="this.classList.toggle('enlarged')">
+
+  <script>
+    function validatePhone(i){ const re=/^\d{3}-\d{3}-\d{4}$/; if(i.value && !re.test(i.value)) alert('Use 555-123-4567'); }
+    function showFee(s){ const m={picnic:'Free',concert:'$20'}; document.getElementById('fee').textContent='Fee: '+m[s.value]; }
+    function submitClick(){ alert('Confirmed — thank you'); }
+    function count(){ document.getElementById('chars').textContent = document.getElementById('fb').value.length; }
+  </script>
+</body>
+</html>

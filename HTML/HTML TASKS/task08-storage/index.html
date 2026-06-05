@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Task 08 — Preferences</title></head>
+<body>
+  <h1>Preferences</h1>
+  <label>Preferred event:
+    <select id="pref"><option value="picnic">Picnic</option><option value="concert">Concert</option></select>
+  </label>
+  <button id="clear">Clear Preferences</button>
+
+  <script>
+    const sel=document.getElementById('pref');
+    sel.addEventListener('change',()=>localStorage.setItem('preferred',sel.value));
+    window.addEventListener('load',()=>{ const p=localStorage.getItem('preferred'); if(p) sel.value=p; });
+    document.getElementById('clear').addEventListener('click',()=>{ localStorage.clear(); sessionStorage.clear(); alert('Cleared'); });
+  </script>
+</body>
+</html>

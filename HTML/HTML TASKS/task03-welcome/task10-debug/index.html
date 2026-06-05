@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Task 10 — Debugging</title></head>
+<body>
+  <h1>Debugging Demo</h1>
+  <button id="log">Log a message</button>
+  <button id="error">Trigger an error</button>
+  <script>
+    document.getElementById('log').addEventListener('click',()=>console.log('Debug: button clicked', {time:Date.now()}));
+    document.getElementById('error').addEventListener('click',()=>{ try{ throw new Error('Sample error for DevTools'); }catch(e){ console.error(e); } });
+  </script>
+</body>
+</html>
